@@ -1,0 +1,12 @@
+#include "node1.h" // provides the node class and the linked list toolkit
+#include "Person.h" // provides the Person class, CS 223 Lab 1
+
+    Person Sleepy_Dwarf("Sleepy", "Dwarf", 73);
+    Person Happy_Dwarf("Happy", "Dwarf", 73);
+    Person Snow_White("Snow", "White", 21);
+    
+    node* head_ptr = new node(Sleepy_Dwarf);
+    list_head_insert(head_ptr, Happy_Dwarf);
+    list_head_insert(head_ptr, Snow_White);
+    
+    cout << head_ptr -> data() << endl;   // standard output
